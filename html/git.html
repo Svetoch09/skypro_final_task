@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Git - всему голова!</title>
+      <title>Git - devOp фаворит!</title>
       <link rel="stylesheet" type="text/css" href="../css/style.css">
       <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
       <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
@@ -11,21 +11,36 @@
    </head>
    <body>
       <!--Card-->
-      <div class="card">
-         <p class="subtitle">Git</p>
+      <div class="card animated fadeIn">
+         <p class="subtitle">Система контроля версий Git</p>
           <ul>
-            <li>ls - расшифровывается как "List files in the directory", что переводится как "перечислить все файлы в папке" или "вывести на экран список файлов в папке".</li>
-            <li>cd - расшифровывается как "Change directory", что переводится как "сменить папку" или "перейти в другую папку".</li>
-            <li>pwd - расшифровывается как "Present working directory", что переводится как "текущая рабочая директория". То есть команда pwd показывает, в какой сейчас папке мы находимся. </li>
-            <li>mkdir - расшифровывается как "Make directory", что переводится как "создать папку".</li>
-            <li>mv - расфшифровывается как"Move", что переводится как "переместить", "передвинуть". С помощью нее можно переместить, переименовать или удалить файл/</li>
-         </ul>
+            <li>git config --global user.name "USER NAME" – Задать или изменить имя пользователя</li>
+            <li>git config --global user.email "user@mail.com" – Задать или изменить email</li>
+            <li>git init – Создать пустой репозиторий Git</li>
+            <li>git status – Проверить статуса репозитория</li>
+            <li>git commit -m "Message" – Внести изменения c однострочным сообщением</li>
+            <li>git log -p – Просмотреть историю коммитов с изменениями</il>
+            <li>git show 1af17e – Просмотреть заданный коммит с хэшом 1af17e</li>
+            <li>git diff – Просмотреть список изменений, внесённых в репозиторий, но не подготовленных для фиксации</li>
+            <li>git mv – Переименовать файл</li>
+            <li>git revert – Откатить последний коммит</li>
+            <li>git branch new_branch_name – Создать новую ветку</li>
+            <li>git checkout new_branch_name – Перейти в новю ветку </li>
+            <li>git branch – Просмотреть список веток</li>
+            <li>git branch -d existing_branch_name – Удалить ветку existing_branch_name</li>
+            <li>git merge existing_branch_name – Объедиить существующую ветку existing_branch_name с основной</li>
+            <li>git merge --abort – Остановить слияние при конфликте</li>
+            <li>git push origin main – Отправить изменения в remote репозиторий</li>
+            <li>git pull – Получить изменения из remote репозитория</li>
+          </ul>
+          <h3 id="link"><a href=" https://git-scm.com/book/ru/v2/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-C:-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B" target="_blank"> Полный список команд</a></p>
+            <p class="location" align="center">
+               <a href="../index.html">Вернуться на главную</a>
+            </p>
+           
       </div>
       <!--footer-->
       <footer class="animated fadeIn">
-         <p class="location" align="center">
-            <a href="../index.html">Вернуться на главную</a>
-          </p>
          &copy; SkyPro, 2025
       </footer>
    </body>
